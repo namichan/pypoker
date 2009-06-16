@@ -1,4 +1,5 @@
 from random import shuffle
+from rank import Ranks, rank
 
 known_pl = {}
 
@@ -18,7 +19,7 @@ class Round:
     Victory = 5   
 
 
-class G:
+class Game:
     def __init__(self, ante=2, minbet=5):
         self.plst = []
         self.deck = Deck()

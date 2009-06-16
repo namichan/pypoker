@@ -153,7 +153,7 @@ class DoyleBot(irc.IRCClient):
                 msg = "There's one already in progress!"
             else:
                 self.inprocess = True
-                self.g = G()
+                self.g = Game()
                 self.g_timer = time.time()
                 msg = "New game about to begin.  To join, type 'join'. You have 30 seconds"
                 self.msg(channel, msg)
